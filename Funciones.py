@@ -1,4 +1,6 @@
 
+
+#Esta funcion me permite agregar a una nueva persona a retirar un libro 
 def agregarRetiro(colRetiros, listaLibros):
     legajo = input("\n Ingrese el numero de legajo: ")
     apellidoNombre = input("\n Ingrese nombre y apellido: ")
@@ -20,6 +22,8 @@ def agregarRetiro(colRetiros, listaLibros):
         print("\n El libro no se encuentra en la biblioteca.")
 
 
+
+#Esta funcion me permite eliminar un retiro de la colecion de todos los retiros, ya sea los nuevos ingresados o los precargados
 def eliminarRetiro(colRetiros,numLegajo):
     encontrado = False
     for unRetiro in colRetiros:
@@ -32,6 +36,8 @@ def eliminarRetiro(colRetiros,numLegajo):
         print(F"\n No se encontró un retiro con el legajo {numLegajo}.")
 
 
+
+#actualiza cualquier retiro dentro de los exitentes
 def actualizarRetiro(colRetiros, numLegajo):
     encontrado = False
     for unRetiro in colRetiros:
@@ -51,6 +57,7 @@ def actualizarRetiro(colRetiros, numLegajo):
         print(F"\n No se encontró un retiro con el legajo {numLegajo}.")
 
 
+#Muestra un solo retiro exitente tanto los agregados recientemete o los precargados
 def mostrarUnRetiro(colRetiros, numLegajo):
     encontrado = False
     for unRetiro in colRetiros:
@@ -64,6 +71,7 @@ def mostrarUnRetiro(colRetiros, numLegajo):
     if (not encontrado):
         print(F"\n No se encontró un retiro con el legajo {numLegajo}.")
 
+#Esta funcion se encarga de mostrar todos los retiros que haya
 def mostrarTodosLosRetiros(colRetiros):
     if (len(colRetiros) == 0):
         print("\n No hay retiros registrados.")

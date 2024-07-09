@@ -1,7 +1,7 @@
 
-from Retiro import agregarRetiro, eliminarRetiro, actualizarRetiro, mostrarUnRetiro, mostrarTodosLosRetiros
+from Funciones import agregarRetiro, eliminarRetiro, actualizarRetiro, mostrarUnRetiro, mostrarTodosLosRetiros
 
-
+#creo esta coleccion para ya tener datos cargados
 colRetiros =[
         {
             "legajo": "1",
@@ -35,7 +35,7 @@ colRetiros =[
         },
     ]
 
-
+#creo esta coleccion para ya tener datos cargados
 librosDisponibles = ["libro1", "libro2", "libro3", "libro4", "libro5"
                     ,"libro6", "libro7", "libro8", "libro9", "libro10"]
 
